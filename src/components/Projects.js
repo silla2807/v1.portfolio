@@ -1,87 +1,93 @@
 import React from 'react';
-import { FaGithub, FaFigma, FaFilePowerpoint, FaAndroid, FaLaptopCode, FaCogs } from 'react-icons/fa';
+import {
+  FaGithub,
+  FaFigma,
+  FaFilePowerpoint,
+  FaAndroid,
+  FaLaptopCode,
+  FaCogs,
+  FaLink,
+} from 'react-icons/fa';
 
 const Projects = () => {
-  // Array of project objects with name, description, technology, link, icon, and type
   const projects = [
     {
       name: 'Product Data Extraction from Images',
-      description: 'Developed a system for extracting text from images using machine learning, incorporating advanced text detection and recognition techniques, including the STR model and CRNN neural network architecture.',
+      description:
+        'Developed a system for extracting text from images using machine learning, incorporating advanced text detection and recognition techniques, including the STR model and CRNN neural network architecture. Led the team, actively participating in dataset collection, documentation, presentation, scheduling, acting as the point of contact, and contributing to the overall development and discussions.',
       tech: 'Machine Learning, Computer Vision, Python',
       type: 'ML System',
       link: 'https://docs.google.com/presentation/d/1UnisrOIN1NwnHzz7_RzQuqELnz98qvfG/',
-      icon: <FaCogs className="text-xl text-yellow-500" />, // Automated system icon for ML
+      icon: <FaCogs className="text-3xl text-yellow-500" />,
     },
     {
       name: 'Lost and Found',
-      description: 'Led the development of a comprehensive web platform using HTML, CSS, JavaScript, PHP, MySQL, and XAMPP, facilitating user authentication, item reporting, and search functionalities for reporting lost and found items.',
+      description:
+        'Led the development of a web platform using HTML, CSS, JavaScript, PHP, and MySQL for reporting lost and found items. This application was inspired by a real-world scenario at my college, where the institution was overwhelmed with lost-and-found emails. To address this, we developed the application as part of a Web Programming course project, successfully creating a functional solution through continuous effort and learning.',
       tech: 'HTML, CSS, JavaScript, PHP, MySQL',
       type: 'Web',
       link: 'https://github.com/silla2807/Web-Programming-Project',
-      icon: <FaLaptopCode className="text-xl text-gray-300" />, // For Web project
+      icon: <FaLaptopCode className="text-3xl text-gray-300" />,
     },
     {
       name: 'NITC Events Android Application',
-      description: 'Collaborated on UI/UX design using Figma and front-end development in Flutter and Dart for an Android app providing real-time updates on NITC events, ensuring an engaging user experience.',
+      description:
+        'Collaborated on UI/UX design using Figma and contributed to the front-end development of an Android app using Flutter and Dart to provide real-time updates on NITC events. This project sparked my interest in UI/UX design as I explored the creative process of designing user-friendly interfaces. Additionally, I gained proficiency in ER diagrams, use cases, functional and non-functional requirements, and the complete software development lifecycle.',
       tech: 'UI/UX Design, Flutter, Dart',
       type: 'Android',
       link: 'https://www.figma.com/design/QWVwV3tzC9v83Q4uqOnRbS/UI-NITCEvents',
-      icon: <FaAndroid className="text-xl text-green-600" />, // For Android project
+      icon: <FaAndroid className="text-3xl text-green-600" />,
     },
     {
       name: 'Student Trading Hub',
-      description: 'Collaborated on UI/UX design using Figma and front-end development in Flutter and Dart for an Android app providing real-time updates on NITC events, ensuring an engaging user experience. Student Trading Hub | Web Development, PHP, MySQL Collaborated on building a dynamic web application using HTML, CSS, JavaScript, PHP, MySQL, and XAMPP, focusing on creating a user-friendly interface and robust back-end functionalities for peer-to-peer trading of essential items within the college community',
-      tech: 'Web Development, Bootstrap, PHP, MySQL',
+      description:
+        'Built a dynamic web application using HTML, CSS, PHP, and MySQL, facilitating peer-to-peer trading within the college community. This was my first project, where I gained expertise in PHP and related technologies. Through research, learning, and patience, I successfully developed the application, deepening my interest in web development and understanding the importance of user requirements and system design.',
+      tech: 'Web Development, PHP, MySQL',
       type: 'Web',
       link: 'https://github.com/silla2807/Student-Trading-Hub',
-      icon: <FaLaptopCode className="text-xl text-gray-300" />, // For Web project
+      icon: <FaLaptopCode className="text-3xl text-gray-300" />,
+    },
+    {
+      name: 'Portfolio',
+      description:
+        'Created a personal portfolio using React to showcase skills and projects. Designed components with Tailwind CSS and deployed it as a standalone application on GitHub Pages.',
+      tech: 'React.js, Tailwind CSS, JavaScript, Git',
+      type: 'Web',
+      link: 'https://github.com/silla2807/Portfolio',
+      icon: <FaLaptopCode className="text-3xl text-gray-300" />,
     },
   ];
-
+  
   return (
-    <div className="py-16">
-      <h2 className="text-4xl font-semibold text-center text-white mb-12">Projects</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8 px-4 border-l-2 rounded-lg border-blue-500 transition-all duration-1000 ">
-        {projects.map((project, index) => {
-          let linkIcon;
-          // Change link icon and symbol based on project type
-          switch (project.type) {
-            case 'Web':
-              linkIcon = <FaGithub className="text-xl text-gray-300" />;
-              break;
-            case 'Android':
-              linkIcon = <FaFigma className="ml-2 text-xl text-pink-600" />; // Figma icon for Android link
-              break;
-            case 'ML System':
-              linkIcon = <FaFilePowerpoint className="ml-2 text-xl text-blue-500" />;
-              break;
-            default:
-              linkIcon = <FaGithub className="ml-2 text-xl text-blue-600" />;
-          }
-
-          return (
-            <div
-              key={index}
-              className="p-6 rounded-lg bg-gray-900 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
-            >
-              <div className="flex items-center bg-gray-900 mb-4 p-3 rounded-lg">
-                <div className="mr-3">{project.icon}</div>
-                <h3 className="text-xl font-semibold text-white">{project.name}</h3>
-              </div>
-              <p className="text-gray-200 mb-4">{project.description}</p>
-              <p className="text-sm text-blue-400 font-bold mb-4">{project.tech}</p> {/* Technologies in bold blue */}
-              <a
-                href={project.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium"
-              >
-                {linkIcon}
-                <span className="ml-2 text-gray-300">View More</span> {/* Optional link text */}
-              </a>
+    <div className="py-16 px-4">
+      <h2 className="text-4xl font-bold text-center text-white mb-12">
+        Projects
+      </h2>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        {projects.map((project, index) => (
+          <div
+            key={index}
+            className="p-6 bg-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-transform transform hover:scale-105"
+          >
+            <div className="flex items-center mb-4">
+              <div className="mr-3">{project.icon}</div>
+              <h3 className="text-xl font-semibold text-white">
+                {project.name}
+              </h3>
             </div>
-          );
-        })}
+            <p className="text-gray-300 mb-4">{project.description}  <a
+              href={project.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center text-blue-500 hover:text-blue-700"
+            >
+              <FaLink className="mr-2 text-lg" />
+            </a></p>
+            <p className="text-sm text-blue-400 font-medium mb-4">
+              {project.tech}
+            </p>
+          </div>
+        ))}
       </div>
     </div>
   );

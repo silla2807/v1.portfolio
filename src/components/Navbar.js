@@ -40,7 +40,7 @@ const Navbar = () => {
           } md:flex md:space-x-6 flex-col md:flex-row absolute md:static bg-custom-dark md:bg-inherit w-full md:w-auto top-10 right-0 p-4 md:p-0`}
         >
           <li
-            className={`text-lg font-semibold cursor-pointer ${
+            className={`text-2sm font-semibold cursor-pointer ${
               activeNav === "about" ? "text-blue-500" : "text-white"
             }`}
             onClick={() => handleNavClick("about")}
@@ -48,7 +48,7 @@ const Navbar = () => {
             About
           </li>
           <li
-            className={`text-lg font-semibold cursor-pointer ${
+            className={`text-2sm  font-semibold cursor-pointer ${
               activeNav === "experience" ? "text-blue-500" : "text-white"
             }`}
             onClick={() => handleNavClick("experience")}
@@ -56,7 +56,7 @@ const Navbar = () => {
             Experience
           </li>
           <li
-            className={`text-lg font-semibold cursor-pointer ${
+            className={`text-2sm  font-semibold cursor-pointer ${
               activeNav === "skillGallery" ? "text-blue-500" : "text-white"
             }`}
             onClick={() => handleNavClick("skillGallery")}
@@ -64,7 +64,7 @@ const Navbar = () => {
            Skills
           </li>
           <li
-            className={`text-lg font-semibold cursor-pointer ${
+            className={`text-2sm  font-semibold cursor-pointer ${
               activeNav === "projects" ? "text-blue-500" : "text-white"
             }`}
             onClick={() => handleNavClick("projects")}
@@ -72,7 +72,7 @@ const Navbar = () => {
             Projects
           </li>
           <li
-            className={`text-lg font-semibold cursor-pointer ${
+            className={`text-2sm  font-semibold cursor-pointer ${
               activeNav === "contact" ? "text-blue-500" : "text-white"
             }`}
             onClick={() => handleNavClick("contact")}

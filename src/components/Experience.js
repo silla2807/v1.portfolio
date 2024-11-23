@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { FaBriefcase, FaGraduationCap } from 'react-icons/fa'; // Icons for work and education
-import { motion } from 'framer-motion'; // For smooth animations
+import { FaBriefcase, FaGraduationCap } from 'react-icons/fa'; 
+import { motion } from 'framer-motion'; 
 
 const Experience = () => {
   const [selectedIndex, setSelectedIndex] = useState(0); // Set default selected index to 0 (Magicbricks)
@@ -18,17 +18,18 @@ During my time on the Home Interiors team, I worked on two major projects focuse
       skills: [
         'Java',
         'Spring Boot',
-        'OOPS',
+        'Hibernate/JPA',
         'Postman',
         'JUnit',
         'MySQL',
         'SQL',
         'React.js',
+        'Git',
         'GitLab',
         'JIRA',
         'HTML',
         'CSS',
-        'JavaScript',
+        'JavaScript (ES6)',
         'IntelliJ IDEA',
       ], // Directly reference the imported logo
       link: 'https://www.magicbricks.com',
@@ -48,6 +49,7 @@ During my time on the Home Interiors team, I worked on two major projects focuse
         'Databases',
         'Web Programming',
         'Software Engineering',
+        'Principles of Management',
       ],
       link: 'https://www.nitc.ac.in',
     },
@@ -64,7 +66,6 @@ During my time on the Home Interiors team, I worked on two major projects focuse
           className="flex flex-col gap-6 lg:w-1/3"
           whileInView={{ opacity: 1 }}
           initial={{ opacity: 0 }}
-          // transition={{ duration: 0.5, ease: 'easeIn' }}
           viewport={{ once: true }}
         >
           {experiences.map((exp, index) => (
@@ -123,7 +124,6 @@ During my time on the Home Interiors team, I worked on two major projects focuse
               className="px-4"
               whileInView={{ opacity: 1 }}
               initial={{ opacity: 0 }}
-              // transition={{ duration: 0.5, ease: 'easeIn' }}
               viewport={{ once: true }}
             >
               <h3 className="text-3xl font-semibold text-white">

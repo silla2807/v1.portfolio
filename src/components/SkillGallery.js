@@ -1,7 +1,6 @@
 import React from 'react';
 
 const SkillGallery = () => {
-  // Array of skills with their badge URLs and labels
   const skills = [
     { name: 'Java', badge: 'https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white' },
     { name: 'SQL', badge: 'https://img.shields.io/badge/SQL-CC2927?style=for-the-badge&logo=microsoftsqlserver&logoColor=white' },
@@ -23,7 +22,7 @@ const SkillGallery = () => {
   return (
     <div className="skill-gallery py-16 transition-all duration-300">
       <div className="max-w-6xl mx-auto px-8">
-        <h2 className="text-4xl font-bold text-center text-white-800 mb-8">Skill Gallery</h2>
+        <h2 className="text-4xl font-bold text-center text-white-800 mb-8">Tools and Technologies</h2>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6" >
           {skills.map((skill, index) => (
             <div

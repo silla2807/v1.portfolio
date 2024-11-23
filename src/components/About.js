@@ -11,7 +11,6 @@ const About = () => {
           About Me
         </h2>
         <div className="flex flex-col lg:flex-row items-start lg:items-center">
-          {/* Text Section */}
           <div
             className="lg:w-2/3 mb-8 lg:mb-0 p-6 border-l-2 border-blue-600 rounded-lg shadow-md transition-all duration-1000 ease-in"
           >
