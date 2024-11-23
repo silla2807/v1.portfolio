@@ -1,0 +1,46 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities; 
+
+body {
+  font-family: Seravek, 'Gill Sans Nova', Ubuntu, Calibri, 'DejaVu Sans', source-sans-pro, sans-serif;
+  font-weight: normal;
+  line-height: 1.6;
+  background-color: #0D1216; 
+  color: #f7f3f3; 
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; 
+  cursor: auto;
+}
+
+.container {
+  max-width: 1200px; /* Limit maximum width */
+  margin: 0 auto; /* Center the content */
+  padding: 0 100px; /* Add 100px margin on both sides */
+  background-color: #0D1216; /* Set container background color */
+}
+
+section {
+  margin-bottom: 4rem;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 50px; /* Reduce side margins for medium-sized screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 20px; /* Further reduce side margins for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 10px; /* Minimal padding for very small screens */
+  }
+}
