@@ -1,8 +1,5 @@
 import React from 'react';
 import {
-  FaGithub,
-  FaFigma,
-  FaFilePowerpoint,
   FaAndroid,
   FaLaptopCode,
   FaCogs,
