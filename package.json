@@ -2,7 +2,7 @@
   "name": "v1.portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://silla2807.github.io/v1.portfolio/",
+  "homepage": "https://silla2807.github.io/v1.portfolio",
   "dependencies": {
     "@fortawesome/free-brands-svg-icons": "^6.7.1",
     "@fortawesome/free-solid-svg-icons": "^6.7.1",
