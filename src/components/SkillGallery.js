@@ -34,9 +34,9 @@ const SkillGallery = () => {
                 alt={skill.name}
                 className="w-auto h-12 object-contain mb-4 transition-all duration-300"
               />
-              <h3 className="text-sm font-semibold text-white-800 hover:text-gray-300 transition-colors duration-300">
+              {/* <h3 className="text-sm font-semibold text-white-800 hover:text-gray-300 transition-colors duration-300">
                 {skill.name}
-              </h3>
+              </h3> */}
             </div>
           ))}
         </div>
