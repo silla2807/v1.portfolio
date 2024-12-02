@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/v1.portfolio/static/css/main.f16ea518.css",
-    "main.js": "/v1.portfolio/static/js/main.2f2d58ce.js",
+    "main.js": "/v1.portfolio/static/js/main.9161798c.js",
     "static/js/453.2ebbd5db.chunk.js": "/v1.portfolio/static/js/453.2ebbd5db.chunk.js",
     "static/media/Silla_K__Resume_SDE.pdf": "/v1.portfolio/static/media/Silla_K__Resume_SDE.9b815558a3e4789ec651.pdf",
     "index.html": "/v1.portfolio/index.html",
     "main.f16ea518.css.map": "/v1.portfolio/static/css/main.f16ea518.css.map",
-    "main.2f2d58ce.js.map": "/v1.portfolio/static/js/main.2f2d58ce.js.map",
+    "main.9161798c.js.map": "/v1.portfolio/static/js/main.9161798c.js.map",
     "453.2ebbd5db.chunk.js.map": "/v1.portfolio/static/js/453.2ebbd5db.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f16ea518.css",
-    "static/js/main.2f2d58ce.js"
+    "static/js/main.9161798c.js"
   ]
 }
